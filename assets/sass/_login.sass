@@ -1,0 +1,58 @@
+.login
+	background: $black
+	position: relative
+	display: flex
+	justify-content: center
+	align-items: center
+	height: 100%
+
+.login-header
+	z-index: 2
+	text-align: center
+	color: $white
+
+	img
+		width: 900px
+
+	h4
+		font-size: 1.7rem
+		color: $darkyellow
+		text-transform: uppercase
+		letter-spacing: 10px
+		margin-bottom: 50px
+
+.login-btns
+	margin-top: 30px
+	display: flex
+	gap: 30px
+	justify-content: center
+
+.login-btn
+	padding: 15px 25px
+	color: $white
+	font-family: $second-font
+	border-radius: 20px
+	font-size: 1.2rem
+	display: inline-flex
+	align-items: center
+	margin-top: 10px
+	background: $black
+	box-shadow: 9px 9px 0px 0px $red
+	transition: all 0.2s ease-in-out
+	cursor: pointer
+
+	i
+		margin-right: 15px
+
+	&:hover
+		background: $red
+		box-shadow: 9px 9px 0px 0px $black
+
+.login-bg
+	position: absolute
+	inset: 0
+	height: 100%
+	width: 100%
+	object-fit: cover
+	object-position: center center
+	opacity: 0.4

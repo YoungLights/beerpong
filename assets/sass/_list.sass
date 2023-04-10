@@ -1,0 +1,37 @@
+.list-item
+	background: $lightgrey
+	padding: 18px 25px
+	border-radius: 10px
+	display: flex
+	align-items: center
+	justify-content: space-between
+
+.list-item + .list-item
+	margin-top: 5px
+
+.list-item-details
+	display: flex
+
+	p:first-child
+		font-weight: bold
+		margin-right: 20px
+
+.list-item-actions
+	display: flex
+
+	span 
+		margin: 0px 2px
+		display: flex
+		justify-content: center
+		align-items: center
+		height: 30px
+		width: 30px
+		background: $black
+		color: $white
+		border-radius: 50%
+		font-size: 0.8rem
+		transition: all 0.1s ease-in-out
+		cursor: pointer
+
+		&:hover
+			background: $red

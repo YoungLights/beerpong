@@ -1,0 +1,68 @@
+.nav-header
+	background: $black
+	padding: 20px
+	position: fixed
+	top: 0
+	left: 0
+	right: 0
+	z-index: 2
+
+	.frame
+		display: flex
+		align-items: center
+		justify-content: space-between
+
+.nav-logo
+	img
+		width: 200px
+
+.nav-avatar
+	height: 60px
+	width: 60px
+	background: $dark
+	border-radius: 50%
+	border: solid 4px $red
+	cursor: pointer
+
+.nav-avatar-container
+	display: flex
+	align-items: center
+	gap: 20px
+
+	p
+		font-family: $second-font
+		color: $white
+		text-transform: uppercase
+
+
+.nav-footer
+	position: fixed
+	bottom: 0
+	left: 0
+	right: 0
+	background: $black
+	padding: 20px
+
+.nav-links
+	display: flex
+	justify-content: center
+	gap: 50px
+
+	a
+		padding: 0px 20px
+		display: flex
+		flex-direction: column
+		align-items: center
+		color: $white
+		font-size: 1.3rem
+		transition: all 0.2s ease-in-out
+		position: relative
+
+		span
+			text-transform: uppercase
+			font-size: 0.85rem
+			font-weight: 700
+			margin-top: 10px
+
+		&:hover, &.router-link-active
+			color: $yellow
